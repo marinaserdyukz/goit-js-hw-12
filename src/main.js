@@ -56,7 +56,13 @@ async function handleSearch(event) {
 
     createGallery(data.hits);
 
-    if (page * 15 < data.totalHits) {
+    if (page * 15 >= data.totalHits) {
+      hideLoadMoreButton();
+
+      iziToast.info({
+        message: "We're sorry, but you've reached the end of search results.",
+      });
+    } else {
       showLoadMoreButton();
     }
   } catch (error) {
