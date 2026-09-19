@@ -5,6 +5,84 @@
   margin: 0 auto;
   padding: 0 16px;
 }
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+}
+
+.is-hidden {
+  display: none;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  padding: 0;
+  margin: 20px 0;
+  list-style: none;
+}
+
+.gallery-item {
+  border: 1px solid #000;
+}
+
+.gallery-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.gallery-image {
+  display: block;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.info {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  padding: 8px;
+}
+
+.info-item {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.is-hidden {
+  display: none;
+}
+
+.load-more {
+  display: block;
+  margin: 32px auto;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.load-more.is-hidden {
+  display: none;
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+}
+
+.loader.is-hidden {
+  display: none;
+}
+
 /* Styles for Tablet devices */
 @media only screen and (min-width: 768px) {
   .container {
